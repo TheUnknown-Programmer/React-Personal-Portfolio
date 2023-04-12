@@ -35,25 +35,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>HTML, CSS, SASS, Javascript, React.js Responsive Mobile Design, UX Design, UI Design, Graphic Design, Illustrator, Adobe Suite</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>GitHub</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Portfolio Skills</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>React.js</h5>
-                            </div>
-                        </Carousel>
+                        <p>I am proficient in HTML, CSS, and JavaScript, with experience working on various web projects. I am knowledgeable about CSS frameworks such as Bootstrap and Tailwind CSS, and I have experience with front-end frameworks such as React. Additionally, I am familiar with CSS preprocessors like SASS and have a good understanding of cross-browser compatibility and accessibility. I have also worked with version control using Git, and I have experience with responsive design and mobile-first development. I understand web performance optimization techniques and have used front-end build tools such as Webpack.</p>
                     </div>
                 </div>
             </div>

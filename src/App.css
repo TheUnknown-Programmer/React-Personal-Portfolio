@@ -309,14 +309,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 60px;
 }
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: white;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -505,6 +505,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
+  border: 1px solid #fff;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;

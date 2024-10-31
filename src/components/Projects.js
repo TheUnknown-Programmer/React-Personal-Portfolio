@@ -1,3 +1,5 @@
+// Projects.js
+
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
@@ -10,36 +12,41 @@ import emailImg3 from "../assets/img/email-3.png";
 export const Projects = () => {
   const projects = [
     {
-      title: "Old Portfolio",
-      description: "Web Development",
+      title: "Portfolio",
+
       imgUrl: projImg1,
+      githubLink:
+        "https://github.com/TheUnknown-Programmer/React-Personal-Portfolio",
+      website: "https://jonathanfloresdev.netlify.app/",
     },
     {
-      title: "E-Commerce Webesite",
-      description: "Web Development",
+      title: "E-Commerce Website",
+
       imgUrl: projImg2,
     },
     {
-      title: "Youtube Clone",
-      description: "Web Development",
+      title: "Pomodoro App",
+
       imgUrl: projImg3,
+      githubLink: "https://github.com/TheUnknown-Programmer/focusapp",
+      website: "https://focusapp-beige.vercel.app",
     },
   ];
 
   const projects2 = [
     {
       title: "Email Landing Page",
-      description: "Email Development",
+
       imgUrl: emailImg1,
     },
     {
       title: "Email Advertisement",
-      description: "Email Development",
+
       imgUrl: emailImg2,
     },
     {
       title: "Email Transaction",
-      description: "Email Development",
+
       imgUrl: emailImg3,
     },
   ];
@@ -72,30 +79,17 @@ export const Projects = () => {
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <Row>
-                      {projects.map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
-                      })}
+                      {projects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
                     <Row>
-                      {projects2.map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
-                      })}
+                      {projects2.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
                     </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="third">
-                    <p>
-                      I have been an artist for as long as I could remember.
-                      Trying to make something unique has always been my goal.
-                      The results of my creations have been my constant
-                      motivation; something I could proudly say, "Yea, I created
-                      that!". Once I got introduced to coding, I was able to
-                      create anything with my knowledge of coding. It let me
-                      create my website, which led you here. It's exciting being
-                      able to create anything by coding, I wonder what we can
-                      create together!
-                    </p>
                   </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>
